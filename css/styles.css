@@ -36,7 +36,7 @@ body {
   /* Sets the font size to 14px*/
   font-size: 16px;
   /* Sets the line-height to 1.6 */
-  list-style: 1.6;
+  line-height: 1.5;
   background-color: var(--background-color);
   min-height: 100vh;
 }
@@ -67,17 +67,18 @@ h3 {
   border-radius: 50%;
 }
 
-a {
+a:link {
   color: var(--anchor);
 }
 
 a:visited {
   /* visited link */
   color: var(--a-visited);
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hevering over a link */
   text-decoration: none;
 }
@@ -139,10 +140,11 @@ button:hover, button:focus {
   margin-left: 15px;
 }
 
-/*
 .navigation-list__item--active {
-    text-decoration: none;
-    font-weight: bolder;*/
+  text-decoration: none;
+  font-weight: bolder;
+}
+
 /* Profile box moved to the center of the page*/
 .profile {
   max-width: 600px;
@@ -183,19 +185,6 @@ button:hover, button:focus {
   text-align: right;
 }
 
-/* WORK.HTML */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: var(--padding);
-}
-
-.grid__item {
-  background-color: var(--grid-color);
-  padding: var(--padding);
-}
-
 .work {
   text-align: center;
 }
@@ -227,10 +216,10 @@ button:hover, button:focus {
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 66%;
+  width: 33%;
 }
-
 /* end grid fallback */
+
 @supports (display: grid) {
   .grid {
     display: grid;
@@ -244,11 +233,13 @@ button:hover, button:focus {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 10px;
+		border-radius: 10px;
   }
 
   .grid__item: last-child {
     grid-column: 3 / 3;
-    grid-row: 0;
+    grid-row: 1 / 3;
   }
 }
 

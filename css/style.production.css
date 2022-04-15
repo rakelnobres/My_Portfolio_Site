@@ -28,7 +28,7 @@ body {
   /* Sets the font size to 14px*/
   font-size: 16px;
   /* Sets the line-height to 1.6 */
-  list-style: 1.6;
+  line-height: 1.5;
   background-color: #FFF0F5;
   min-height: 100vh;
 }
@@ -59,17 +59,18 @@ h3 {
   border-radius: 50%;
 }
 
-a {
+a:link {
   color: #357b70;
 }
 
 a:visited {
   /* visited link */
   color: #05676e;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hevering over a link */
   text-decoration: none;
 }
@@ -141,10 +142,11 @@ button:focus {
   margin-left: 15px;
 }
 
-/*
 .navigation-list__item--active {
-    text-decoration: none;
-    font-weight: bolder;*/
+  text-decoration: none;
+  font-weight: bolder;
+}
+
 /* Profile box moved to the center of the page*/
 .profile {
   max-width: 600px;
@@ -191,21 +193,6 @@ button:focus {
   text-align: right;
 }
 
-/* WORK.HTML */
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 10px;
-}
-
-.grid__item {
-  background-color: #d3d3d3;
-  padding: 10px;
-}
-
 .work {
   text-align: center;
 }
@@ -242,10 +229,10 @@ button:focus {
 /* start grid fallback */
 .grid__item {
   display: inline-block;
-  width: 66%;
+  width: 33%;
 }
-
 /* end grid fallback */
+
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
@@ -261,12 +248,16 @@ button:focus {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 10px;
+		border-radius: 10px;
   }
 
   .grid__item: last-child {
     -ms-grid-column: 3;
     grid-column: 3 / 3;
-    grid-row: 0;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
   }
 }
 
