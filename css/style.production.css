@@ -19,7 +19,7 @@ font-family: 'Nunito', sans-serif;*/
 }
 
 html {
-  border-bottom: 10px solid #483d8b;
+  border-bottom: 10px solid #191970;
 }
 
 body {
@@ -29,7 +29,6 @@ body {
   font-size: 16px;
   /* Sets the line-height to 1.6 */
   line-height: 1.5;
-  background-color: #FFF0F5;
   min-height: 100vh;
 }
 
@@ -37,14 +36,12 @@ h1 {
   font-family: 'Merienda', cursive;
   font-size: 30px;
   font-weight: 700px;
-  color: #483d8b;
 }
 
 h2 {
   font-family: 'Merienda', cursive;
   font-size: 24px;
   font-weight: 700px;
-  color: #483d8b;
 }
 
 h3 {
@@ -85,7 +82,7 @@ button {
   border: none;
   /* styles the background color, font color, and text decoration of the button*/
   background-color: #800080;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   /* adds spacing to the button */
   padding: 10px;
@@ -112,7 +109,7 @@ button:focus {
 
 .button__secondary {
   background-color: #4169e1;
-  color: white;
+  color: #FFFFFF;
   margin: auto;
   text-align: center;
 }
@@ -134,7 +131,6 @@ button:focus {
   font-family: 'Merienda', cursive;
   font-size: 20px;
   font-weight: 700px;
-  padding-top: 10px;
 }
 
 .navigation-list li {
@@ -173,12 +169,15 @@ button:focus {
   display: flex;
   width: 100%;
   padding: 10px;
-  border-top: 10px solid #483d8b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 10px solid #191970;
   background-color: #FFFFFF;
 }
 
 .page-header__item {
-  width: 60%;
+  width: 30%;
   height: auto;
   border-radius: 10px;
   -webkit-box-flex: 0;
@@ -207,7 +206,7 @@ button:focus {
 }
 
 .standard-label {
-  color: #483d8b;
+  color: undefined;
   font-weight: bold;
 }
 
@@ -221,9 +220,11 @@ button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  position: sticky;
   top: 100%;
   padding: 30px;
+  color: #FFFFFF;
+  background-color: #B0C4DE;
+  position: sticky;
 }
 
 /* start grid fallback */
@@ -231,8 +232,8 @@ button:focus {
   display: inline-block;
   width: 33%;
 }
-/* end grid fallback */
 
+/* end grid fallback */
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
@@ -240,7 +241,7 @@ button:focus {
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 0;
+    margin: 20px;
   }
 
   .grid__item {
@@ -249,7 +250,7 @@ button:focus {
     min-height: auto;
     margin: 0;
     padding: 10px;
-		border-radius: 10px;
+    border-radius: 10px;
   }
 
   .grid__item: last-child {
@@ -270,7 +271,7 @@ button:focus {
   font-family: inherit;
   /* styles the button */
   background-color: #800080;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -288,7 +289,7 @@ button {
   font-family: inherit;
   /* styles the button */
   background-color: #800080;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
