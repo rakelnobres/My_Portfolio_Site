@@ -29,10 +29,6 @@ font-family: 'Nunito', sans-serif;* /
   box-sizing: border-box;
 }
 
-html {
-  border-bottom: 10px solid var(--deepblue);
-}
-
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
@@ -46,7 +42,7 @@ body {
 
 h1 {
   font-family: 'Merienda', cursive;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: var(--font-bold);
 }
 
@@ -155,7 +151,7 @@ button:focus {
 .profile {
   max-width: 600px;
   margin: 0 auto;
-  padding: 90px 0;
+  padding: 60px 0;
   line-height: 1.5;
 }
 
@@ -219,6 +215,7 @@ button:focus {
   padding: 30px;
   color: var(--white-color);
   background-color: var(--backgourd-footer);
+  border-bottom: 10px solid var(--deepblue);
   position: sticky;
 }
 
