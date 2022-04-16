@@ -1,6 +1,7 @@
 /* font families
 font-family: 'Merienda', cursive;
-font-family: 'Nunito', sans-serif;*/
+font-family: 'Nunito', sans-serif;* /
+
 /* color used */
 :root {
   --primary-color: #800080;
@@ -14,9 +15,11 @@ font-family: 'Nunito', sans-serif;*/
   --yellow: #edc655;
   --lightyellow: #fcffad;
   --orange: #f76414;
-  --backgourd-footer: #B0C4DE;
-  --white-color: #FFFFFF;
+  --backgourd-footer: #b0d4de;
+  --white-color: #fff;
+
   /* repetitive values */
+
   --opacity: 0.6;
   --font-bold: 700px;
   --padding: 10px;
@@ -33,7 +36,8 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  /* Sets the font size to 14px*/
+
+  /* Sets the font size to 14px* /
   font-size: 16px;
   /* Sets the line-height to 1.6 */
   line-height: 1.5;
@@ -71,7 +75,8 @@ a:link {
 a:visited {
   /* visited link */
   color: var(--a-visited);
-  /*text-decoration: none;*/
+
+  /* text-decoration: none; */
 }
 
 a:hover,
@@ -88,22 +93,27 @@ a:active {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  /* styles the background color, font color, and text decoration of the button*/
+
+  /* styles the background color, font color, and text decoration of the button */
   background-color: var(--primary-color);
   color: var(--white-color);
   text-decoration: none;
+
   /* adds spacing to the button */
   padding: var(--padding);
   border-radius: 3px;
+
   /* give button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   display: block;
   text-align: center;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: var(--opacity);
 }
@@ -123,7 +133,7 @@ button:hover, button:focus {
   padding: 30px 0;
 }
 
-/* erase dots in navigation list*/
+/* erase dots in navigation list */
 .navigation-list {
   list-style-type: none;
   font-family: 'Merienda', cursive;
@@ -141,7 +151,7 @@ button:hover, button:focus {
   font-weight: bolder;
 }
 
-/* Profile box moved to the center of the page*/
+/* Profile box moved to the center of the page */
 .profile {
   max-width: 600px;
   margin: 0 auto;
@@ -248,14 +258,17 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: var(--primary-color);
   color: var(--white-color);
   text-decoration: none;
   padding: var(--padding);
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
@@ -267,6 +280,7 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: var(--opacity);
   font-size: 18px;

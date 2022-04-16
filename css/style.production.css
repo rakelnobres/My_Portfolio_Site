@@ -7,7 +7,8 @@
 
 /* font families
 font-family: 'Merienda', cursive;
-font-family: 'Nunito', sans-serif;*/
+font-family: 'Nunito', sans-serif; */
+
 /* color used */
 :root {
   /* repetitive values */
@@ -15,7 +16,7 @@ font-family: 'Nunito', sans-serif;*/
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -25,8 +26,10 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  /* Sets the font size to 14px*/
+
+  /* Sets the font size to 14px */
   font-size: 16px;
+
   /* Sets the line-height to 1.6 */
   line-height: 1.5;
   min-height: 100vh;
@@ -63,7 +66,8 @@ a:link {
 a:visited {
   /* visited link */
   color: #05676e;
-  /*text-decoration: none;*/
+
+  /* text-decoration: none; */
 }
 
 a:hover,
@@ -80,13 +84,16 @@ a:active {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
-  /* styles the background color, font color, and text decoration of the button*/
+
+  /* styles the background color, font color, and text decoration of the button */
   background-color: #800080;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
+
   /* adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
+
   /* give button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   display: block;
@@ -96,6 +103,7 @@ button {
 button:hover {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
 }
@@ -103,13 +111,14 @@ button:hover {
 button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
 }
 
 .button__secondary {
   background-color: #4169e1;
-  color: #FFFFFF;
+  color: #fff;
   margin: auto;
   text-align: center;
 }
@@ -119,13 +128,13 @@ button:focus {
   clear: both;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   padding: 30px 0;
 }
 
-/* erase dots in navigation list*/
+/* erase dots in navigation list */
 .navigation-list {
   list-style-type: none;
   font-family: 'Merienda', cursive;
@@ -143,7 +152,7 @@ button:focus {
   font-weight: bolder;
 }
 
-/* Profile box moved to the center of the page*/
+/* Profile box moved to the center of the page */
 .profile {
   max-width: 600px;
   margin: 0 auto;
@@ -170,10 +179,10 @@ button:focus {
   width: 100%;
   padding: 10px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-top: 10px solid #191970;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .page-header__item {
@@ -181,14 +190,14 @@ button:focus {
   height: auto;
   border-radius: 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -217,13 +226,13 @@ button:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   top: 100%;
   padding: 30px;
-  color: #FFFFFF;
-  background-color: #B0C4DE;
+  color: #fff;
+  background-color: #b0c4de;
   position: sticky;
 }
 
@@ -267,32 +276,39 @@ button:focus {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #800080;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
+
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the button */
   background-color: #800080;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -303,6 +319,7 @@ button {
 button:hover {
   /* lets the mouse appear as a hand hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
   font-size: 18px;
@@ -311,6 +328,7 @@ button:hover {
 button:focus {
   /* lets the mouse appear as a hand hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
   font-size: 18px;
@@ -319,6 +337,7 @@ button:focus {
 .button:hover {
   /* lets the mouse appear as a hand hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
   font-size: 18px;
@@ -327,6 +346,7 @@ button:focus {
 .button:focus {
   /* lets the mouse appear as a hand hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
   font-size: 18px;
@@ -392,63 +412,63 @@ button:focus {
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
